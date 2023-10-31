@@ -33,6 +33,11 @@ body {
     text-align: center;
 }
 
+.links > a > h2:hover {
+    background-color: red;
+}
+
 .recipe-image {
     width: 500px;
 }
+
