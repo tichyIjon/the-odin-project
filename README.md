@@ -1,1 +1,1 @@
-# repo for oding projects
+# repo for odin projects
