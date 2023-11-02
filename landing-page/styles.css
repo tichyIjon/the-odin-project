@@ -1,0 +1,270 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* section 1 */
+
+.sec1 {
+    width: 100%;
+    background-color: white;
+    color: #533B4D;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    flex-grow: 5;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.header-links > a {
+    margin-left: 20px;
+}
+
+.header-logo {
+    padding-bottom: 40px;
+}
+
+.hero {
+    display: flex;
+
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+
+}
+
+.hero-content {
+    margin-right: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content > h1 {
+    font-weight: 700;
+}
+
+.colored {
+    color: #F564A9;
+}
+
+.hero-content > button {
+    border: 0px;
+    border-radius: 10px;
+    width: 20%;
+    height: 10%;
+    font-size: 20px;
+
+    background-color: #C1ABA6;
+    transition: background 0.2s ease-in-out;
+}
+
+.hero-content > button:hover {
+    background-color: #FAA4BD;
+}
+
+.hero-image {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image > img {
+    width: 600px;
+    height: 60%;
+}
+
+a:link {
+    color: #F564A9;
+}
+
+a:visited {
+    color: #533B4D;
+}
+
+/* section 2 */
+
+.sec2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+.sec2-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sec2-card  {
+    width: 25%;
+    padding: 40px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: #272025;
+
+    transition: all 0.2s ease-in-out;
+
+}
+
+.sec2-card:hover {
+    background-color: rgba(250, 164, 189, 1);
+}
+
+.card-image {
+    border: 3px solid #F564A9;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.card-image > img {
+    border-radius: 15px;
+}
+
+.card-subtext {
+    width: 200px;
+    display: flex;
+    text-align: center;
+}
+
+/* section 3 */
+
+.sec3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    height: 400px;
+    padding-left: 200px;
+    padding-right: 200px;
+
+    background-color: #FAE3C6;
+}
+
+.quote {
+    width: 66%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-text {
+    font-style: italic;
+    font-size: 30px;
+}
+
+.quote-author {
+    width: 25%;
+    align-self: flex-end;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* section 4 */
+
+.sec4 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec4-container {
+    width: 70%;
+    height: 50%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background-color: #FAA4BD;
+}
+
+.sec4-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.call {
+    font-weight: 700;
+}
+
+.sec4-container > button {
+    border: 0px;
+    border-radius: 10px;
+    width: 20%;
+    height: 50%;
+    font-size: 20px;
+
+    color: white;
+    background-color: #533B4D;
+    transition: all 0.2s ease-in-out;
+}
+
+.sec4-container > button:hover {
+    color: black;
+    background-color: #F564A9;
+}
+
+
+/* section 5 */
+
+.sec5 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #C1ABA6;
+    color: black;
+}
+
+
+
