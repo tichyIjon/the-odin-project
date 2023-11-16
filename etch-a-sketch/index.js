@@ -3,6 +3,7 @@ let dimensions;
 
 function generateGrid(dimensions) {
     document.querySelector('.container').innerHTML = '';
+    interactions = 0.0;
 
     let height = (512/(Math.sqrt(dimensions)));
     let width = (512/(Math.sqrt(dimensions)));
@@ -16,16 +17,19 @@ function generateGrid(dimensions) {
 }
 
 let color = 'bnw';
+let interactions = 0.0;
 function generateEventListeners() {
     let sqr = document.querySelectorAll('.sqr')
     sqr.forEach(box => {
     box.addEventListener('mouseover',()=> {
         if (color === 'bnw') {
+            interactions += 0.1;
+            console.log(interactions);
             let randomRedValue = 0;
             let randomGreenValue = 0;
             let randomBlueValue = 0;
     
-            box.style.backgroundColor = `rgb(${randomRedValue},${randomGreenValue},${randomBlueValue})`;
+            box.style.backgroundColor = `rgba(${randomRedValue},${randomGreenValue},${randomBlueValue},${interactions})`;
         } else if (color === 'rng') {
             let randomRedValue = Math.random() * (256 * 1) + 1
             let randomGreenValue = Math.random() * (256 * 1) + 1

@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: rgb(10,10,10); */
+    background-color: rgba(228, 153, 153, 0.2);
 }
 
 .main {
@@ -67,6 +67,8 @@ body {
 .color-buttons > button:active {
     background-color: coral;
 }
+
+
 
 
 
