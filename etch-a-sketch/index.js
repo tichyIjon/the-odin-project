@@ -15,15 +15,25 @@ function generateGrid(dimensions) {
     }
 }
 
+let color = 'bnw';
 function generateEventListeners() {
     let sqr = document.querySelectorAll('.sqr')
     sqr.forEach(box => {
     box.addEventListener('mouseover',()=> {
-        let randomRedValue = Math.random() * (256 * 1) + 1
-        let randomGreenValue = Math.random() * (256 * 1) + 1
-        let randomBlueValue = Math.random() * (256 * 1) + 1
+        if (color === 'bnw') {
+            let randomRedValue = 0;
+            let randomGreenValue = 0;
+            let randomBlueValue = 0;
+    
+            box.style.backgroundColor = `rgb(${randomRedValue},${randomGreenValue},${randomBlueValue})`;
+        } else if (color === 'rng') {
+            let randomRedValue = Math.random() * (256 * 1) + 1
+            let randomGreenValue = Math.random() * (256 * 1) + 1
+            let randomBlueValue = Math.random() * (256 * 1) + 1
+    
+            box.style.backgroundColor = `rgb(${randomRedValue},${randomGreenValue},${randomBlueValue})`;
+        }
 
-        box.style.backgroundColor = `rgb(${randomRedValue},${randomGreenValue},${randomBlueValue})`;
     })
 })
 }
@@ -41,3 +51,10 @@ const btn64 = document.querySelector('.sizeThree').addEventListener('click',()=>
     generateEventListeners()
 })
 
+const bnwBtn = document.querySelector('.black-white').addEventListener('click', ()=> {
+    color = 'bnw';
+})
+
+const rngBtn = document.querySelector('.random').addEventListener('click', ()=> {
+    color = 'rng';
+})

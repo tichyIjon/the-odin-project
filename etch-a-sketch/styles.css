@@ -19,12 +19,12 @@ body {
     
 }
 
-.buttons {
+.size-buttons {
     display: flex;
     justify-content: space-between;
 }
 
-.buttons > button {
+.size-buttons > button {
     border: 3px solid black;
     margin: 5px;
     width: 33%;
@@ -33,8 +33,8 @@ body {
     transition: all 0.1s ease-in-out;
 }
 
-.buttons > button:active {
-    background-color: red;
+.size-buttons > button:active {
+    background-color: coral;
 }
 
 .main-container {
@@ -49,6 +49,23 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.color-buttons {
+    display: flex;
+}
+
+.color-buttons > button {
+    border: 3px solid black;
+    margin: 5px;
+    width: 50%;
+    height: 40px;
+
+    transition: all 0.1s ease-in-out;
+}
+
+.color-buttons > button:active {
+    background-color: coral;
 }
 
 
