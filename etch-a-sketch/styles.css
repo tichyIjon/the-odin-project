@@ -10,14 +10,39 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.main {
+    display: flex;
+    flex-direction: column;
+    
+}
 
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons > button {
+    border: 3px solid black;
+    margin: 5px;
+    width: 25%;
+    height: 40px;
+
+    transition: all 0.1s ease-in-out;
+}
+
+.buttons > button:active {
+    background-color: red;
+}
+
+.main-container {
+    border: 3px solid black;
 }
 
 .container {
-    border: 3px solid black;
-    width: 680px;
-    height: 690px;
+    width: 512px;
+    height: 512px;
 
     display: flex;
     flex-wrap: wrap;
