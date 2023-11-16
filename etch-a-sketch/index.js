@@ -19,7 +19,11 @@ function generateEventListeners() {
     let sqr = document.querySelectorAll('.sqr')
     sqr.forEach(box => {
     box.addEventListener('mouseover',()=> {
-        box.style.backgroundColor = 'red';
+        let randomRedValue = Math.random() * (256 * 1) + 1
+        let randomGreenValue = Math.random() * (256 * 1) + 1
+        let randomBlueValue = Math.random() * (256 * 1) + 1
+
+        box.style.backgroundColor = `rgb(${randomRedValue},${randomGreenValue},${randomBlueValue})`;
     })
 })
 }
@@ -34,10 +38,6 @@ const btn32 = document.querySelector('.sizeTwo').addEventListener('click',()=> {
 })
 const btn64 = document.querySelector('.sizeThree').addEventListener('click',()=> {
     generateGrid(4096)
-    generateEventListeners()
-})
-const btn128 = document.querySelector('.sizeFour').addEventListener('click',()=> {
-    generateGrid(16384)
     generateEventListeners()
 })
 
